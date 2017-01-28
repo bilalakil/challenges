@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+IMAGE=local/haskell-w-hunit
+
+TARGET=`basename $1`
+LOCAL_DIR=$(dirname `readlink -f $1`)
+DOCKER_DIR=/app
+
+>&2 echo Building Docker image
+
+docker build -t $IMAGE . > /dev/null
+
+>&2 echo Running
+
+docker run --rm -it -v $LOCAL_DIR:$DOCKER_DIR:ro $IMAGE bash -c "cd $DOCKER_DIR && ./$TARGET"
+
+>&2 echo Exited without error
