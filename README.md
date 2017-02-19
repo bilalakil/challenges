@@ -34,6 +34,7 @@ My attempts at completing various challenges from:
 
 *February*
 
+- [codechef/cook79](https://github.com/bilalakil/challenges/tree/master/codechef/cook79)
 - [dailyprogrammer/easy/302](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/302)
 
 *January*
