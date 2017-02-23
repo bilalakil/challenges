@@ -5,6 +5,7 @@ My attempts at completing various challenges from:
 
 - [CodeChef](https://codechef.com)
 - [/r/DailyProgrammer](https://reddit.com/r/dailyprogrammer)
+- [HackerEarth](https://hackerearth.com)
 
 ## Software
 
@@ -28,12 +29,18 @@ My attempts at completing various challenges from:
   to avoid dependency management (which is necessary for testing)
   and to help keep environments consistent.
 
+- HackerEarth SQL solutions are simply PostgreSQL queries.
+  
+  Their system was used for testing as well, so their version of PostgreSQL is forced.
+  Executing `SELECT version()` in their test system showed v9.5.1. 
+
 ## Attempted Challenges
 
 **2017**
 
 *February*
 
+- [hackerearth/february-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth/february-sql-challenge)
 - [codechef/cook79](https://github.com/bilalakil/challenges/tree/master/codechef/cook79)
 - [dailyprogrammer/easy/302](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/302)
 
@@ -51,6 +58,9 @@ My attempts at completing various challenges from:
 
 ## Other
 
-- In time-sensitive challenges (like those from CodeChef),
+- In time-sensitive challenges (like those from CodeChef/HackerEarth),
   the code may have been cleaned up before being committed,
   and thus may differ from what was submitted in the challenge.
+
+  There'd be no intentional difference in functionality when this happens.
+
