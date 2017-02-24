@@ -1,38 +1,23 @@
 Challenges
 ==========
 
-My attempts at completing various challenges from:
+My attempts at completing some challenges from:
 
 - [CodeChef](https://codechef.com)
 - [/r/DailyProgrammer](https://reddit.com/r/dailyprogrammer)
 - [HackerEarth](https://hackerearth.com)
 
-## Software
+## Tech
 
-- CodeChef solutions are developed using Python (v3.4),
-  and are simply scripts without external dependencies
-  that take input from `stdin` and output to `stdout`.
-  
-  The [README in `/codechef`](https://github.com/bilalakil/challenges/tree/master/codechef/README.md)
-  contains instructions on executing the scripts via Docker,
-  to help keep environments consistent.
+- [CodeChef solutions](https://github.com/bilalakil/challenges/tree/master/codechef)
+  are developed using Python (v3.4).
+- [/r/DailyProgrammer solutions](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer)
+  are written in Haskell (v8).
+- [HackerEarth SQL solutions](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql)
+  are SQL files containing PostgreSQL (v9.5) queries.
 
-- /r/DailyProgrammer solutions are written in Haskell (v8),
-  and are simply scripts without external dependences
-  that take input from `stdin` and output to `stdout`.
-
-  The solutions are accompanied by HUnit test scripts,
-  which have a singular dependency: HUnit.
-
-  The [README in `/dailyprogrammer`](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/README.md)
-  contains instructions on executing the scripts and their tests via Docker,
-  to avoid dependency management (which is necessary for testing)
-  and to help keep environments consistent.
-
-- HackerEarth SQL solutions are simply PostgreSQL queries.
-  
-  Their system was used for testing as well, so their version of PostgreSQL is forced.
-  Executing `SELECT version()` in their test system showed v9.5.1. 
+The individual directories each contain a README
+with more details surrounding the usage of said software.
 
 ## Attempted Challenges
 
@@ -40,7 +25,7 @@ My attempts at completing various challenges from:
 
 *February*
 
-- [hackerearth/february-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth/february-sql-challenge)
+- [hackerearth-sql/february-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/february-sql-challenge)
 - [codechef/cook79](https://github.com/bilalakil/challenges/tree/master/codechef/cook79)
 - [dailyprogrammer/easy/302](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/302)
 
@@ -56,11 +41,11 @@ My attempts at completing various challenges from:
 - [codechef/cook77](https://github.com/bilalakil/challenges/tree/master/codechef/cook77)
 - [codechef/ltime43](https://github.com/bilalakil/challenges/tree/master/codechef/ltime43)
 
-## Other
+## Notes
 
-- In time-sensitive challenges (like those from CodeChef/HackerEarth),
-  the code may have been cleaned up before being committed,
-  and thus may differ from what was submitted in the challenge.
+- The code may have been cleaned up following submission to challenges,
+  particularly around modifications to tests
+  and command line interactions (i.e. flags/options).
 
-  There'd be no intentional difference in functionality when this happens.
+  There'd be no intentional difference in logic when this happens.
 

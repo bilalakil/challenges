@@ -1,3 +1,7 @@
+CodeChef solutions are developed using Python (v3.4),
+and are simply scripts without external dependencies
+that take input from `stdin` and output to `stdout`.
+
 ## Execution
 
 ### Locally
@@ -28,3 +32,12 @@ Use via the `via-docker` script (that's in this directory):
 This will mount `cook77` to `/app`
 and then execute `/app/chefsetc.py` -
 similar to the local usage steps above.
+
+### Script Options
+
+Each script may have different invocation options.
+`-test` is the only one which they should share in common.
+
+You can read the `if __name == '__main__'` section
+at the bottom of a script to see its available options.
+

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # https://www.codechef.com/COOK77/problems/CHEFARRB
 # Didn't submit calc_backwards in time to see if it'd pass (although I don't think it would've).
@@ -14,7 +14,7 @@ from functools import reduce
 limit_n = 100000
 limit_k = 10 ** 9
 
-def test_data(incl_big, incl_killer):
+def test_data(incl_killer):
     '''
     With limits of n = 10 ** 6 and k = 10 ** 9, expected calculations are:
 
@@ -24,14 +24,15 @@ def test_data(incl_big, incl_killer):
     4999779290
     0
 
-    Or with incl_big = False:
+    Or with incl_killer = False:
 
     4
     2
     18
+    4999779290
     '''
 
-    s = str(3 + (1 if incl_big else 0) + (1 if incl_killer else 0)) + '''
+    s = str(4 + (1 if incl_killer else 0)) + '''
 3 3
 1 2 3
 3 6
@@ -40,11 +41,10 @@ def test_data(incl_big, incl_killer):
 3 1 1 2 1 1 1
 '''
 
-    if incl_big:
-        random.seed(1)
+    random.seed(1)
 
-        ints = ' '.join([str(random.randint(0, limit_k)) for i in range(limit_n)])
-        s += '{n} {k}\n{ints}\n'.format(n=limit_n, k=limit_k, ints=ints)
+    ints = ' '.join([str(random.randint(0, limit_k)) for i in range(limit_n)])
+    s += '{n} {k}\n{ints}\n'.format(n=limit_n, k=limit_k, ints=ints)
 
     if incl_killer:
         s += '{n} {k}\n{ints}\n'.format(n=limit_n, k=limit_k, ints=' '.join(['1' for i in range(limit_n)]))
@@ -145,10 +145,9 @@ def calc_backwards(k, integers):
     return result
 
 if __name__ == '__main__':
-    incl_big = '-nobig' not in sys.argv
-    incl_killer = '-nokiller' not in sys.argv
+    incl_killer = '-killer' in sys.argv
 
-    inp = test_data(incl_big, incl_killer) if '-test' in sys.argv else sys.stdin
+    inp = test_data(incl_killer) if '-test' in sys.argv else sys.stdin
 
     f = calc
     if '-1' in sys.argv:

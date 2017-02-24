@@ -1,5 +1,7 @@
-FROM haskell:8.0.1
+FROM samdoshi/haskell-stack
 MAINTAINER Bilal Akil <mail@bilalakil.me>
 
-RUN cabal update && cabal install HUnit-1.5.0.0
+RUN stack --resolver=lts-8.2 setup
+
+RUN stack --resolver=lts-8.2 install HUnit-1.5.0.0
 

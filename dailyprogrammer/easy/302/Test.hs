@@ -1,4 +1,5 @@
-#!/usr/bin/env runhaskell
+#!/usr/bin/env stack
+-- stack --resolver=lts-8.2 --install-ghc runghc --package=HUnit-1.5.0.0
 
 module Test where 
 

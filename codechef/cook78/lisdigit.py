@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # https://www.codechef.com/COOK78/problems/LISDIGIT
 # Submission successful!

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # https://www.codechef.com/LTIME43/problems/FLYMODE
 # Timed out.
