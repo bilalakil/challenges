@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *February*
 
+- [codechef/ltime45](https://github.com/bilalakil/challenges/tree/master/codechef/ltime45)
 - [dailyprogrammer/easy/303](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/303)
 - [hackerearth-sql/february-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/february-sql-challenge)
 - [codechef/cook79](https://github.com/bilalakil/challenges/tree/master/codechef/cook79)
