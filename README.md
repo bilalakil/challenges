@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *March*
 
+- [codechef/cook80](https://github.com/bilalakil/challenges/tree/master/codechef/cook80)
 - [hackerearth-sql/march-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/march-sql-challenge)
 
 *February*
