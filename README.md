@@ -23,6 +23,10 @@ with more details surrounding the usage of said software.
 
 **2017**
 
+*April*
+
+- [hackerearth-sql/april-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/april-sql-challenge)
+
 *March*
 
 - [codechef/ltime46](https://github.com/bilalakil/challenges/tree/master/codechef/ltime46)
