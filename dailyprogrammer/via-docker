@@ -4,7 +4,7 @@ set -e
 
 IMAGE=local/haskell-stack
 
-TARGET=`basename $1`
+TARGET=./`basename $1`
 LOCAL_DIR=$(dirname `readlink -f $1`)
 DOCKER_DIR=/app
 
@@ -17,5 +17,6 @@ fi
 
 docker run --rm -it \
     -v $LOCAL_DIR:$DOCKER_DIR:ro \
+    --workdir $DOCKER_DIR \
     $IMAGE \
-    bash -c "cd $DOCKER_DIR && ./$TARGET"
+    $TARGET ${@:2}

@@ -28,6 +28,10 @@ Simply CD to the directory and execute the `.hs` file you desire:
 
 ### Via Docker
 
+**Dependencies**
+
+- `brew install coreutils` (linked) on a Mac.
+
 **Usage**
 
 Note: Builds a `local/haskell-stack` image.
@@ -37,5 +41,5 @@ Use via the `via-docker` script (that's in this directory):
     ./via-docker easy/302/Main.hs
 
 This will mount `easy/302` to `/app`,
-CD to that directory, and then execute `Main.hs` - 
-similar to the local usage steps above.
+and then execute `./Main.hs` from within `/app` - 
+achieving a result somewhat similar to the local usage steps above.

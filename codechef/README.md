@@ -23,6 +23,10 @@ you can pass the file into `python3` instead of executing it directly:
 
 ### Via Docker
 
+**Dependencies**
+
+- `brew install coreutils` (linked) on a Mac.
+
 **Usage**
 
 Use via the `via-docker` script (that's in this directory):
@@ -30,8 +34,8 @@ Use via the `via-docker` script (that's in this directory):
     ./via-docker cook77/chefsetc.py -test
 
 This will mount `cook77` to `/app`
-and then execute `/app/chefsetc.py` -
-similar to the local usage steps above.
+and then execute `./chefsetc.py` from within `/app` -
+achieving a result somewhat similar to the local usage steps above.
 
 ### Script Options
 
