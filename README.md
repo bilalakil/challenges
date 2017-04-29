@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *April*
 
+- [codechef/ltime47](https://github.com/bilalakil/challenges/tree/master/codechef/ltime47)
 - [codechef/cook81](https://github.com/bilalakil/challenges/tree/master/codechef/cook81)
 - [hackerearth-sql/april-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/april-sql-challenge)
 
