@@ -23,6 +23,10 @@ with more details surrounding the usage of said software.
 
 **2017**
 
+*May*
+
+- [codechef/snckql17](https://github.com/bilalakil/challenges/tree/master/codechef/snckql17)
+
 *April*
 
 - [codechef/ltime47](https://github.com/bilalakil/challenges/tree/master/codechef/ltime47)
