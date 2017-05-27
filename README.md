@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *May*
 
+- [dailyprogrammer/easy/316](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/316)
 - [codechef/snckql17](https://github.com/bilalakil/challenges/tree/master/codechef/snckql17)
 
 *April*
