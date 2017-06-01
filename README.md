@@ -23,6 +23,10 @@ with more details surrounding the usage of said software.
 
 **2017**
 
+*June*
+
+- [codechef/snckpb17](https://github.com/bilalakil/challenges/tree/master/codechef/snckpb17)
+
 *May*
 
 - [dailyprogrammer/easy/316](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/316)
