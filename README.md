@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *June*
 
+- [codechef/cook83](https://github.com/bilalakil/challenges/tree/master/codechef/cook83)
 - [codechef/snckel17](https://github.com/bilalakil/challenges/tree/master/codechef/snckel17)
 - [codechef/snckpb17](https://github.com/bilalakil/challenges/tree/master/codechef/snckpb17)
 
@@ -55,15 +56,15 @@ with more details surrounding the usage of said software.
 
 *January*
 
-- [codechef/cook78](https://github.com/bilalakil/challenges/tree/master/codechef/cook78)
 - [codechef/ltime44](https://github.com/bilalakil/challenges/tree/master/codechef/ltime44)
+- [codechef/cook78](https://github.com/bilalakil/challenges/tree/master/codechef/cook78)
 
 **2016**
 
 *December*
 
-- [codechef/cook77](https://github.com/bilalakil/challenges/tree/master/codechef/cook77)
 - [codechef/ltime43](https://github.com/bilalakil/challenges/tree/master/codechef/ltime43)
+- [codechef/cook77](https://github.com/bilalakil/challenges/tree/master/codechef/cook77)
 
 ## Notes
 
