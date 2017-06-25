@@ -25,6 +25,7 @@ with more details surrounding the usage of said software.
 
 *June*
 
+- [codechef/ltime49](https://github.com/bilalakil/challenges/tree/master/codechef/ltime49)
 - [codechef/cook83](https://github.com/bilalakil/challenges/tree/master/codechef/cook83)
 - [codechef/snckel17](https://github.com/bilalakil/challenges/tree/master/codechef/snckel17)
 - [codechef/snckpb17](https://github.com/bilalakil/challenges/tree/master/codechef/snckpb17)
