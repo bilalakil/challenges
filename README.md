@@ -3,14 +3,21 @@ Challenges
 
 My attempts at completing some challenges from:
 
+**Active**
+
 - [CodeChef](https://codechef.com)
 - [/r/DailyProgrammer](https://reddit.com/r/dailyprogrammer)
+
+**Inactive**
+
 - [HackerEarth](https://hackerearth.com)
+    - There don't seem to be any more SQL challenges here (which is what I was there for). Sad.
 
 ## Tech
 
 - [CodeChef solutions](https://github.com/bilalakil/challenges/tree/master/codechef)
-  are developed using Python (v3.4).
+  are developed using Python (v3.5.3).
+  Solutions before July 2017 were developed using Python (v3.4.6).
 - [/r/DailyProgrammer solutions](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer)
   are written in Haskell (v8).
 - [HackerEarth SQL solutions](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql)
@@ -21,7 +28,13 @@ with more details surrounding the usage of said software.
 
 ## Attempted Challenges
 
+_(In reverse chronological order.)_
+
 **2017**
+
+*July*
+
+- [codechef/cook84](https://github.com/bilalakil/challenges/tree/master/codechef/cook84)
 
 *June*
 

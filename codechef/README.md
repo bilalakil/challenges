@@ -8,7 +8,7 @@ that take input from `stdin` and output to `stdout`.
 
 **Dependencies**
 
-- Python 3.4.6
+- Python 3.5.3
 
 **Usage**
 
