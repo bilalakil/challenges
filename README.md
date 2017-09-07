@@ -29,6 +29,10 @@ _(In reverse chronological order.)_
 
 **2017**
 
+*September*
+
+- [hackerearth-sql/september-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/september-sql-challenge)
+
 *August*
 
 - [hackerrank/101hack51](https://github.com/bilalakil/challenges/tree/master/hackerrank/101hack51)
