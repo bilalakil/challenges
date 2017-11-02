@@ -29,6 +29,10 @@ _(In reverse chronological order.)_
 
 **2017**
 
+*November*
+
+- [hackerrank/hourrank-24](https://github.com/bilalakil/challenges/tree/master/hackerrank/hourrank-24)
+
 *September*
 
 - [hackerearth-sql/september-sql-challenge](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/september-sql-challenge)
