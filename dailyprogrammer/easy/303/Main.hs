@@ -1,6 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver=lts-8.2 --install-ghc runghc
-
+-- stack --resolver=lts-9.12 --install-ghc runghc
 {-
 Ricochet
 ========
@@ -11,42 +10,36 @@ Ricochet
 
 My journey to finding the formulas is commented beneath the code.
 -}
-
 module Main where
 
-data Corner = UL | UR | LR | LL deriving (Show, Eq)
+data Corner
+  = UL
+  | UR
+  | LR
+  | LL
+  deriving (Show, Eq)
 
-ricochet :: (Integral a, Fractional b) => a -> a -> a -> a -> b -> (Corner, a, b)
-ricochet h w m n v
-    = (c,b,fromIntegral d / v)
-
-    where
+ricochet ::
+     (Integral a, Fractional b) => a -> a -> a -> a -> b -> (Corner, a, b)
+ricochet h w m n v = (c, b, fromIntegral d / v)
+  where
     h' = h - m
     w' = w - n
-    d  = lcm w' h'
-
-    b  = d `div` h' + d `div` w' - 2
-    c  =
-        case (
-            ((d `div` h' - 1) `mod` 2),
-            ((d `div` w' - 1) `mod` 2)
-        ) of
-            (0,0) -> LR
-            (0,1) -> LL
-            (1,0) -> UR
-            (1,1) -> UL
+    d = lcm w' h'
+    b = d `div` h' + d `div` w' - 2
+    c =
+      case (((d `div` h' - 1) `mod` 2), ((d `div` w' - 1) `mod` 2)) of
+        (0, 0) -> LR
+        (0, 1) -> LL
+        (1, 0) -> UR
+        (1, 1) -> UL
 
 main :: IO ()
-main = interact ( unlines
-                . map (output . input . words)
-                . lines
-                )
-    
-    where
+main = interact (unlines . map (output . input . words) . lines)
     -- How to make these less fragile and more idiomatic?
+  where
     input (h:w:m:n:v:[]) = ricochet (read h) (read w) (read m) (read n) (read v)
-    output (c,b,t) = show c ++ " " ++ show b ++ " " ++ show t
-
+    output (c, b, t) = show c ++ " " ++ show b ++ " " ++ show t
 {-
 ## Finding the Formulas
 
@@ -81,9 +74,9 @@ Somehow (perhaps ironically) this helped me soon realise that:
 >     |       . |   |       |
 >     |       . |   |       |
 >     @-+ . . @-+   @-------@
->     |o|     |o|   
->     |o|     |o|   
->     +-+-----+-+   
+>     |o|     |o|
+>     |o|     |o|
+>     +-+-----+-+
 
 That's why the variables `h' = h - m` and `w' = w - n` are used.
 They're the solution to the bonus.

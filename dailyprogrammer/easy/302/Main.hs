@@ -1,6 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver=lts-8.2 --install-ghc runghc
-
+-- stack --resolver=lts-9.12 --install-ghc runghc
 {-
 Spelling With Chemistry
 =======================
@@ -15,21 +14,23 @@ so I've only been able to use things based on principles introduced there.
 A notable exception is the succinct use of `interact` in `main`,
 which I found [here](https://wiki.haskell.org/Haskell_IO_for_Imperative_Programmers).
 -}
-
 module Main
-    ( Element(..)
-    , symToEl
-    , elify
-    , elsToStr
-    , main
-    ) where
+  ( Element(..)
+  , symToEl
+  , elify
+  , elsToStr
+  , main
+  ) where
 
-import Data.List
-import Data.Char
+import           Data.Char
+import           Data.List
 
-data Element = BadSymbol
-               | Element {name::String, symbol::String, weight::Double}
-               deriving (Show, Eq)
+data Element
+  = BadSymbol
+  | Element { name   :: String
+            , symbol :: String
+            , weight :: Double }
+  deriving (Show, Eq)
 
 symToEl :: String -> Element -- The provided string should be lowercase!
 symToEl "ac" = Element "Actinium" "Ac" 227
@@ -139,30 +140,29 @@ symToEl "zr" = Element "Zirconium" "Zr" 91.22
 symToEl _    = BadSymbol
 
 elify :: String -> [Element]
-elify ""   = []
+elify "" = []
 elify word =
-    case filter (all (/= BadSymbol)) (recurse (map toLower word)) of
-        []    -> []
-        [[]]  -> []
-        words -> maximumBy compareBySumOfWeights words
-
-    where
+  case filter (all (/= BadSymbol)) (recurse (map toLower word)) of
+    []    -> []
+    [[]]  -> []
+    words -> maximumBy compareBySumOfWeights words
+  where
     compareBySumOfWeights :: [Element] -> [Element] -> Ordering
-    compareBySumOfWeights a b = 
-        let sumOfWeights els = sum [ w | Element {weight=w} <- els ]
-        in  compare (sumOfWeights a) (sumOfWeights b)
-
+    compareBySumOfWeights a b =
+      let sumOfWeights els = sum [w | Element {weight = w} <- els]
+      in compare (sumOfWeights a) (sumOfWeights b)
     recurse :: String -> [[Element]]
-    recurse ""   = [[]]
+    recurse "" = [[]]
     recurse word =
-        concat [ let el = symToEl sym
-                 in case el of
-                    BadSymbol  -> [[el]]
-                    Element {} -> map (el:) (recurse remaining)
-               | (sym,remaining) <- map (`splitAt` word) [1 .. length word]
-               ]
+      concat
+        [ let el = symToEl sym
+          in case el of
+               BadSymbol  -> [[el]]
+               Element {} -> map (el :) (recurse remaining)
+        | (sym, remaining) <- map (`splitAt` word) [1 .. length word]
+        ]
 
 elsToStr :: [Element] -> String
-elsToStr els = foldl' (++) "" [ sym | Element {symbol=sym} <- els ]
+elsToStr els = foldl' (++) "" [sym | Element {symbol = sym} <- els]
 
 main = interact (unlines . map (elsToStr . elify) . lines)

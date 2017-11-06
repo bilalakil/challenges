@@ -4,14 +4,14 @@ set -e
 
 IMAGE=local/haskell-stack
 
-TARGET=./`basename $1`
-LOCAL_DIR=$(dirname `readlink -f $1`)
+TARGET=./"$(basename $1)"
+LOCAL_DIR="$(dirname "$(readlink -f $1)")"
 DOCKER_DIR=/app
 
 if ! docker images | grep -q "^$IMAGE\s"
 then
     >&2 echo == Building Docker image
-    >&2 docker build -t $IMAGE .
+    >&2 docker build -t $IMAGE "$(dirname $0)"
     >&2 echo == Running
 fi
 

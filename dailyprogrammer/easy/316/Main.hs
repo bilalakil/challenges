@@ -1,19 +1,19 @@
 #!/usr/bin/env stack
--- stack --resolver=lts-8.2 --install-ghc runghc
+-- stack --resolver=lts-9.12 --install-ghc runghc
 {-
 Knight's Metric
 ========
 
 - https://redd.it/6coqwk
-- Posted at: https://www.reddit.com/r/dailyprogrammer/comments/6coqwk/20170522_challenge_316_easy_knights_metric/di3zkmf/ 
+- Posted at: https://www.reddit.com/r/dailyprogrammer/comments/6coqwk/20170522_challenge_316_easy_knights_metric/di3zkmf/
 
 I tried to come up with something instead of using a search algorithm but the end result is wrong.
 You can read more about the algorithm where it was posted.
 -}
 module Main where
 
-import Data.List
-import Text.Printf
+import           Data.List
+import           Text.Printf
 
 type Point = (Int, Int)
 
