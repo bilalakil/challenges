@@ -31,6 +31,7 @@ _(In reverse chronological order.)_
 
 *November*
 
+- [codechef/cook88](https://github.com/bilalakil/challenges/tree/master/codechef/cook88)
 - [dailyprogrammer/easy/336](https://github.com/bilalakil/challenges/tree/master/dailyprogrammer/easy/336)
 - [hackerrank/hourrank-24](https://github.com/bilalakil/challenges/tree/master/hackerrank/hourrank-24)
 
