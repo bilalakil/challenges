@@ -31,6 +31,7 @@ _(In reverse chronological order.)_
 
 *December*
 
+- [codechef/cook89](https://github.com/bilalakil/challenges/tree/master/codechef/cook89)
 - [hackerrank/101hack52](https://github.com/bilalakil/challenges/tree/master/hackerrank/101hack52)
 
 *November*
