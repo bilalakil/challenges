@@ -27,6 +27,12 @@ with more details surrounding the usage of said software.
 
 _(In reverse chronological order.)_
 
+**2018**
+
+*January*
+
+- [codechef/cook90](https://github.com/bilalakil/challenges/tree/master/codechef/cook90)
+
 **2017**
 
 *December*
