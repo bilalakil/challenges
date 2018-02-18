@@ -29,6 +29,10 @@ _(In reverse chronological order.)_
 
 **2018**
 
+*February*
+
+- [codechef/cook91](https://github.com/bilalakil/challenges/tree/master/codechef/cook91)
+
 *January*
 
 - [codechef/cook90](https://github.com/bilalakil/challenges/tree/master/codechef/cook90)
