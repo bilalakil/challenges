@@ -31,6 +31,7 @@ _(In reverse chronological order.)_
 
 *February*
 
+- [hackerearth-sql/february-sql-challenge-2018](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql/february-sql-challenge-2018)
 - [codechef/cook91](https://github.com/bilalakil/challenges/tree/master/codechef/cook91)
 
 *January*
