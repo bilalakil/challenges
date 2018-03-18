@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # https://www.codechef.com/COOK91/problems/CTHREE
+# No chance.
 import io
 import sys
 
