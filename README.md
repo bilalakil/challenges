@@ -29,6 +29,10 @@ _(In reverse chronological order.)_
 
 **2018**
 
+*April*
+
+- [hackerrank/hourrank-27](https://github.com/bilalakil/challenges/tree/master/hackerrank/hourrank-27)
+
 *March*
 
 - [codechef/cook92a](https://github.com/bilalakil/challenges/tree/master/codechef/cook92a)
