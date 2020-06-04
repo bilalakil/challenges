@@ -7,6 +7,7 @@ My attempts at completing some challenges from:
 - [HackerRank](https://hackerrank.com)
 - [/r/DailyProgrammer](https://reddit.com/r/dailyprogrammer)
 - [HackerEarth](https://hackerearth.com)
+- [Codewars](https://codewars.com)
 
 ## Tech
 
@@ -19,11 +20,15 @@ My attempts at completing some challenges from:
   are written in Haskell (v8).
 - [HackerEarth SQL solutions](https://github.com/bilalakil/challenges/tree/master/hackerearth-sql)
   are SQL files containing PostgreSQL (v9.5) queries.
+- [Codewars/Rust solutions](https://github.com/bilalakil/challenges/tree/master/codewars/rust)
+  are developed using Rust v1.43.1.
 
 The individual directories each contain a README
 with more details surrounding the usage of said software.
 
-## Attempted Challenges
+## Attempted (Timely) Challenges
+
+Only timely challenges are listed below, thus excluding kata from Codewars.
 
 _(In reverse chronological order.)_
 

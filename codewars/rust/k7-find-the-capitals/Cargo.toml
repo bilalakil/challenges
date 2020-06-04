@@ -1,0 +1,6 @@
+[package]
+name = "k7-find-the-capitals"
+version = "1.0.0"
+description = "https://www.codewars.com/kata/53573877d5493b4d6e00050c"
+authors = ["Bilal Akil <mail@bilalakil.me>"]
+edition = "2018"
