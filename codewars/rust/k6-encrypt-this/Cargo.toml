@@ -1,0 +1,6 @@
+[package]
+name = "k6-encrypt-this"
+description = "https://www.codewars.com/kata/5848565e273af816fb000449"
+version = "1.0.0"
+authors = ["Bilal Akil <mail@bilalakil.me>"]
+edition = "2018"

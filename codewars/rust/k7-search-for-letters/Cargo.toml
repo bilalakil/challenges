@@ -1,0 +1,6 @@
+[package]
+name = "k7-search-for-letters"
+description = "https://www.codewars.com/kata/52dbae61ca039685460001ae"
+version = "1.0.0"
+authors = ["Bilal Akil <mail@bilalakil.me>"]
+edition = "2018"
