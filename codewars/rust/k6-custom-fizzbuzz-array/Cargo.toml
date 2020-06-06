@@ -1,0 +1,6 @@
+[package]
+name = "k6-custom-fizzbuzz-array"
+description = "https://www.codewars.com/kata/5355a811a93a501adf000ab7"
+version = "1.0.0"
+authors = ["Bilal Akil <mail@bilalakil.me>"]
+edition = "2018"
